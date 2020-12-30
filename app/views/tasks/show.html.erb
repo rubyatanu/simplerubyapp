@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+<%= render @task %>
+
+
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Del', task_path(@task),method: :delete,data:{confirm:"do you want to really delete?"} %> |
+<%= link_to 'Back', tasks_path %>
